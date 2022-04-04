@@ -18,7 +18,9 @@ export type GoogleViz = {
   };
 };
 
-export type GoogleChartTicks = { v: string | number, f: string | number }[] | (number | Date)[];
+export type GoogleChartTicks =
+  | { v: number | Date; f: string }[]
+  | (number | Date)[];
 
 export type GoogleChartEditor = {
   new (): GoogleChartEditor;
